@@ -64,7 +64,7 @@ body {
 
 .perf-img {
 	width: 100%;
-  height: 100%;
+	height: 100%;
 }
 
 h1,
@@ -90,7 +90,7 @@ h2 {
 }
 
 .price-outdated {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	color: var(--Grey);
 	text-decoration: line-through;
@@ -100,6 +100,7 @@ p {
 	color: var(--Grey);
 	font-size: 14px;
 	line-height: 1.5;
+	font-weight: 500;
 }
 
 .perfume {
@@ -120,7 +121,7 @@ button {
 	border: none;
 	border-radius: 8px;
 	padding: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -129,3 +130,28 @@ button {
 }
 
 /* DESIGN FOR DESKTOP VIEW */
+@media (min-width: 768px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 680px;
+		height: fit-content;
+	}
+
+	.content {
+		padding: 40px;
+		gap: 24px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 38px;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.perf-img {
+		content: url(./assets/images/image-product-desktop.jpg);
+	}
+}
